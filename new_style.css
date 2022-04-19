@@ -2,6 +2,10 @@
 
 /* root styling */
 
+html {
+  zoom: 90%;
+}
+
 :root {
   --light: #f8f9fa;
   /* --secondary: #adb5bd; */
@@ -357,18 +361,18 @@ a {
 
 .post-title {
   height: 80px;
-  font-size: 1.6rem;
+  font-size: 1.35rem;
   font-weight: 500;
   line-height: 1.42em;
 }
 
 .post-image {
   border-radius: .5rem;
-  height: 550px;
+  height: 500px;
   width: 100%;
 }
 .post-content {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.61111em;
   margin-top: 1em;
