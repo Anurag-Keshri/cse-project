@@ -1,0 +1,189 @@
+* {
+  font-family: "Spartan", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 7.5%;
+}
+
+.heading {
+  background: url(assets/heading.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  opacity: 0.85;
+}
+
+.heading h1 {
+  color: #000000;
+  font-size: 4rem;
+}
+
+.heading p {
+  padding: 1rem 0 0.25rem 0;
+  font-size: 1.95rem;
+}
+
+.heading p a {
+  color: #4caf50;
+  padding-right: 0.5rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.heading p a:hover {
+  color: #1b4332;
+}
+
+.heading .primary {
+  font-size: 2.25rem;
+  text-transform: none;
+  color: #dd4124;
+}
+
+.heading .secondary {
+  color: #34568b;
+  text-transform: none;
+}
+
+.contact .icons-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact .icons-container .icons {
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 2rem;
+}
+
+.contact .icons-container .icons:hover {
+  -webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.5) 0px 0.25em 1em;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.5) 0px 0.25em 1em;
+}
+
+.contact .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2.5rem;
+  color: #fdfffc;
+  border-radius: 50%;
+}
+
+.contact .icons-container .icons .fa-phone {
+  background: #7496cb;
+}
+
+.contact .icons-container .icons .fa-envelope-open {
+  background: #efc050;
+}
+
+.contact .icons-container .icons .fa-map-marker-alt {
+  background: #d90429;
+}
+
+.contact .icons-container .icons h3 {
+  color: #000000;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.contact .icons-container .icons p {
+  color: #4d4d4d;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.row .form {
+  padding: 2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  border-radius: 1%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.row .form h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: #000000;
+}
+
+.row .form .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row .form .inputBox input {
+  border-radius: 10px;
+  width: 49%;
+}
+
+.row .form .inputBox .box,
+.row .form textarea {
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  color: #000000;
+  text-transform: none;
+  margin: 0.7rem 0;
+  border-radius: 10px;
+}
+
+.row .form textarea {
+  width: 100%;
+  height: 15rem;
+  resize: none;
+}
+
+.row .map {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  width: 100%;
+}

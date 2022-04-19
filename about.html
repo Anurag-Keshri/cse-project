@@ -2,176 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Gfresh</title>
+    <title>Blogging Site</title>
+
+    <!-- font awesome icons cdn -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
     />
-    <link
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <style>
-    * {
-      font-family: "Spartan", sans-serif;
-      margin: 0;
-      padding: 0;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      outline: none;
-      border: none;
-      text-decoration: none;
-      text-transform: capitalize;
-      -webkit-transition: 0.2s linear;
-      transition: 0.2s linear;
-    }
-
-    html {
-      font-size: 62.5%;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
-
-    section {
-      padding: 3rem 7.5%;
-    }
-
-    .heading {
-      background: url(assets/heading.jpg) no-repeat;
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      padding-top: 5rem;
-      padding-bottom: 6rem;
-      opacity: 0.85;
-    }
-
-    .heading h1 {
-      color: #000000;
-      font-size: 4rem;
-    }
-
-    .heading p {
-      padding: 1rem 0 0.25rem 0;
-      font-size: 1.95rem;
-    }
-
-    .heading p a {
-      color: #4caf50;
-      padding-right: 0.5rem;
-      font-weight: bold;
-      position: relative;
-    }
-
-    .heading p a:hover {
-      color: #1b4332;
-    }
-
-    .heading .primary {
-      font-size: 2.25rem;
-      text-transform: none;
-      color: #dd4124;
-    }
-
-    .heading .secondary {
-      color: #34568b;
-      text-transform: none;
-    }
-
-    .title {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      padding: 1.2rem 0;
-      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-      color: #000000;
-    }
-
-    .title span {
-      color: #4caf50;
-      padding-left: 0.7rem;
-    }
-
-    .title a {
-      margin-left: auto;
-      color: #088178;
-      font-size: 1.5rem;
-    }
-
-    .title a:hover {
-      color: #e2a0ff;
-    }
-
-    .about .image {
-      float: left;
-      shape-outside: ellipse();
-      height: 45rem;
-    }
-
-    .about p {
-      font-size: 2rem;
-      line-height: 1.75;
-      letter-spacing: 0.5px;
-      text-transform: none;
-      padding: 1rem 0rem;
-      color: #088178;
-    }
-
-    .about a {
-      color: #4caf50;
-    }
-
-    .about .bold {
-      font-weight: bold;
-    }
-
-    .info-container {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: (minmax(27rem, 1fr));
-      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-      gap: 1.5rem;
-    }
-
-    .info-container .info {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      gap: 1.5rem;
-      padding: 2rem 0;
-    }
-
-    .info-container .info img {
-      height: 7rem;
-    }
-
-    .info-container .info .content h3 {
-      font-size: 2rem;
-      color: #000000;
-      padding-bottom: 0.5rem;
-    }
-
-    .info-container .info .content span {
-      font-size: 1.5rem;
-      color: #9b2226;
-    }
-  </style>
-
   <body>
     <!-- Header -->
-    <header id="header" class="shadow bg-light">
+    <header id="header" class="shadow bg-light px-120">
       <nav class="container navbar">
         <a href="index.html" class="nav-brand text-dark"> Blogs </a>
 
@@ -183,71 +30,94 @@
         <!-- collapse on toggle button click -->
         <div class="collapse">
           <ul class="navbar-nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
           </ul>
         </div>
 
         <!-- collapse on toggle button click -->
         <div class="collapse">
           <ul class="navbar-nav">
-            <div class="search-box">
-              <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-            </div>
+            <!-- <div class="search-box">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </div> -->
             <a href="" class="nav-link"><i class="fab fa-facebook-f"></i></a>
             <a href="" class="nav-link"><i class="fab fa-twitter"></i></a>
-            <a href="" class="nav-link"><i class="fab fa-instagram"></i></a>
-            <a href="" class="nav-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_samriddhi_g_/" class="nav-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/samriddhi-gupta-939a91221/"
+              class="nav-link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
           </ul>
         </div>
       </nav>
     </header>
     <!-- .Header -->
 
-    <div class="heading" style="margin-top: 30px">
-      <h1>About Us</h1>
-      <p class="primary">We are crazy about creating our next website!</p>
-      <p class="secondary">Learning is fun</p>
+    <!-- Main-Section -->
+    <div class="about-heading">
+      <h1 class="text-center">About Us</h1>
+      <p class="about-heading-quote text-center">
+        We are crazy about creating our next website!
+      </p>
     </div>
-
+    <hr
+      style="
+        height: 2px;
+        border-width: 0;
+        color: #919191;
+        background-color: #919191;
+        width: 40%;
+      "
+    />
     <section class="about">
       <img class="image" src="assets/about-img.jpg" alt="" />
 
-      <p>
-        Creating this website was a work to learn and practice a lot. Here we
-        have discussed about our views regarding technical and about some stuff
-        that we found interesting. Hope you liked it!
+      <p class="about-content">
+        Creating this website was fun and a "lot of work". Needless to say we
+        learned a lot. We discussed a lot of new and interesting concepts and
+        shared our indivisual views on them. Hope you liked it!
         <br /><br />
-        Scroll and read thoroughly to get knowledge about some of the articles
-        that might amaze you too.
-        <br /><br />
-        We are working on another website and surely we would share it soon. So
-        anyways there are a lot more websites to keep yourself updated about to
-        have more fun out of this interesting life.
+        Be sure to check those articels, they are pretty interesting and you
+        might get to know something new and something that might amaze you too.
+
         <br /><br />
         This website is a team work of three. Myself Samriddhi Gupta, I was
-        wondering about how placebo works and I wrote an article on that.
-        Together I Anurag and Raj prepared this website for you to enjoy your
-        day. Anurag was more fascinated by technical and Raj was into how
-        pollution can effect us and hence we wrote accordingly.
-        <br />
-        Leave your comment below and don't forget to contact us and you can send
-        us email.
+        wondering about how placebo works and I wrote an article on that. I
+        ,together with Anurag and Raj, prepared this website for you to enjoy
+        your day. Anurag was more fascinated by technical aspect and Raj was
+        into how pollution can effect us and hence we wrote accordingly.
+        <br /><br />
+        We are also working on an another website which we would surely share
+        soon.
 
         <br /><br />
-        The world is changing and everyday its some new idea popping our head.
-        Don't let those crazy ideas be lost in this unbending time. Share with
-        us and lets learn more.
+        The world is changing and everyday there are new ideas popping in our
+        heads. Don't let those crazy ideas be lost in this unbending time. Share
+        with us and lets learn more.
       </p>
+      <hr
+        style="
+          height: 2px;
+          border-width: 0;
+          color: #919191;
+          background-color: #919191;
+          width: 40%;
+        "
+      />
     </section>
+    <!-- .Main-Section -->
 
     <!-- footer -->
-    <footer id="footer">
-      <div class="container">
+    <footer id="footer" class="px-80 py-60">
+      <div class="container text-light">
         <div class="row mb-3">
-          <div class="col-3">
-            <h2 class="footer-title secondary-title">About Us</h2>
+          <div class="col-3 px-2 py-2">
+            <h2 class="footer-title secondary-title text-light">About Us</h2>
 
             <div class="secondary-title text-secondary">
               <p class="mt-2">
@@ -262,7 +132,7 @@
 
               <div class="phone">
                 <i class="fas fa-mobile text-primary"></i>
-                7792798708
+                xxxxxxxxxx
               </div>
 
               <div class="email">
@@ -271,96 +141,119 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <h2 class="footer-title secondary-title">Trending articles</h2>
-
-            <div class="feature-post">
-              <div class="flex-item">
-                <article class="article">
-                  <div class="d-flex">
-                    <a href="#">
-                      <img
-                        src="./assets/img9.jp"
-                        class="object-fit px-1"
-                        alt=""
-                      />
-                      <div class="px-1">
-                        <a href="#" class="text-title display-2 text-dark">
-                          Is covid more Dangerous than driving?
-                        </a>
-                        <p class="secondary-title text-secondary display-3">
-                          <span
-                            ><i class="far fa-clock text-primary"></i> Clock Wed
-                            02, 2021
-                          </span>
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </article>
-              </div>
-              <div class="flex-item">
-                <article class="article">
-                  <div class="d-flex">
-                    <a href="#">
-                      <img
-                        src="./assets/img1.jpg"
-                        class="object-fit px-1"
-                        alt=""
-                      />
-                      <div class="px-1">
-                        <a href="#" class="text-title display-2 text-dark">
-                          Tutorials on Tools and Applications
-                        </a>
-                        <p class="secondary-title text-secondary display-3">
-                          <span
-                            ><i class="far fa-clock text-primary"></i> Clock Wed
-                            02, 2021
-                          </span>
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </article>
-              </div>
-              <div class="flex-item">
-                <article class="article">
-                  <div class="d-flex">
-                    <a href="#">
-                      <img
-                        src="./assets/img2.jpg"
-                        class="object-fit px-1"
-                        alt=""
-                      />
-                      <div class="px-1">
-                        <a href="#" class="text-title display-2 text-dark">
-                          Digital Marketing
-                        </a>
-                        <p class="secondary-title text-secondary display-3">
-                          <span
-                            ><i class="far fa-clock text-primary"></i> Clock Wed
-                            02, 2021
-                          </span>
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </article>
-              </div>
-            </div>
+          <div
+            class="col-3 px-2 py-2"
+            style="padding-left: 60px; border-left: thin solid"
+          >
+            <h2 class="footer-title secondary-title text-light">
+              Trending Articles
+            </h2>
+            <article class="article">
+              <a href="#">
+                <div class="px-1">
+                  <a
+                    href="https://www.nytimes.com/2022/04/17/science/covid-risks.html"
+                    class="text-title display-2 text-secondary"
+                  >
+                    <b><</b> Is covid more Dangerous than driving?
+                  </a>
+                  <p class="secondary-title text-secondary display-3">
+                    <span
+                      ><i class="far fa-clock text-primary"></i> Clock Wed 02,
+                      2021
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="article">
+              <a href="#">
+                <div class="px-1">
+                  <a
+                    href="https://www.nytimes.com/section/travel"
+                    class="text-title display-2 text-secondary"
+                  >
+                    <b><</b> Abundance, Exploitation, Recovery
+                  </a>
+                  <p class="secondary-title text-secondary display-3">
+                    <span
+                      ><i class="far fa-clock text-primary"></i> Clock Wed 02,
+                      2021
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="article">
+              <a href="#">
+                <div class="px-1">
+                  <a
+                    href="https://www.nytimes.com/section/food"
+                    class="text-title display-2 text-secondary"
+                  >
+                    <b><</b> To Tip, or Not to Tip? That Is the Question.
+                  </a>
+                  <p class="secondary-title text-secondary display-3">
+                    <span
+                      ><i class="far fa-clock text-primary"></i> Clock Wed 02,
+                      2021
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="article">
+              <a href="#">
+                <div class="px-1">
+                  <a
+                    href="https://www.marketo.com/digital-marketing/#:~:text=At%20a%20high%20level%2C%20digital,goods%2C%20services%2C%20and%20brands."
+                    class="text-title display-2 text-secondary"
+                  >
+                    <b><</b> Digital Marketing
+                  </a>
+                  <p class="secondary-title text-secondary display-3">
+                    <span
+                      ><i class="far fa-clock text-primary"></i> Clock Wed 02,
+                      2021
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </article>
           </div>
-          <div class="col-3">
+          <div
+            class="col-3 px-2 py-2"
+            style="border-left: thin solid; padding-left: 50px"
+          >
             <h2 class="footer-title secondary-title">Related Topics</h2>
 
             <div class="tags">
               <div class="d-flex flex-wrap">
-                <a href="#" class="nav-link btn bg-light"
+                <a
+                  href="https://www.hamistergroup.com/index.php/insights/entries/social-media-a-blessing-or-a-curse#:~:text=ADDICTION%20TO%20SOCIAL%20MEDIA%3A%20In,harm%2C%20stress%20and%20damaged%20relationships."
+                  class="nav-link btn bg-light"
                   >The curse of social media</a
                 >
-                <a href="#" class="nav-link btn bg-light">Internet</a>
-                <a href="#" class="nav-link btn bg-light">Lifestyle</a>
-                <a href="#" class="nav-link btn bg-light">Techonogy</a>
-                <a href="#" class="nav-link btn bg-light">Gaming</a>
+                <a
+                  href="https://en.wikipedia.org/wiki/Internet"
+                  class="nav-link btn bg-light"
+                  >Internet</a
+                >
+                <a
+                  href="https://www.nytimes.com/section/fashion"
+                  class="nav-link btn bg-light"
+                  >Lifestyle</a
+                >
+                <a
+                  href="https://www.nytimes.com/section/technology"
+                  class="nav-link btn bg-light"
+                  >Techonogy</a
+                >
+                <a
+                  href="https://www.nytimes.com/crosswords"
+                  class="nav-link btn bg-light"
+                  >Gaming</a
+                >
               </div>
             </div>
 
@@ -399,22 +292,5 @@
       </div>
     </footer>
     <!-- .footer -->
-
-    <!-- masonry libray for horizontal grid -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
-      integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- swiper slider cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
-      integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- custom javascript main.js file -->
-    <script src="main.js"></script>
   </body>
 </html>

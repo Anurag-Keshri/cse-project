@@ -1,311 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="new_style.css">
-</head>
-
-<style>
-    * {
-        font-family: 'Spartan', sans-serif;
-        margin: 0;
-        padding: 0;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        outline: none;
-        border: none;
-        text-decoration: none;
-        text-transform: capitalize;
-        -webkit-transition: .2s linear;
-        transition: .2s linear;
-    }
-
-    html {
-        font-size: 62.5%;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/contact.css" />
+    
+  </head>
 
 
-    section {
-        padding: 3rem 7.5%;
-    }
-
-    .heading {
-        background: url(assets/heading.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        padding-top: 5rem;
-        padding-bottom: 6rem;
-        opacity: .85;
-    }
-
-    .heading h1 {
-        color: #000000;
-        font-size: 4rem;
-    }
-
-    .heading p {
-        padding: 1rem 0 .25rem 0;
-        font-size: 1.95rem;
-    }
-
-    .heading p a {
-        color: #4caf50;
-        padding-right: .5rem;
-        font-weight: bold;
-        position: relative;
-    }
-
-    .heading p a:hover {
-        color: #1b4332;
-    }
-
-    .heading .primary {
-        font-size: 2.25rem;
-        text-transform: none;
-        color: #dd4124;
-    }
-
-    .heading .secondary {
-        color: #34568b;
-        text-transform: none;
-    }
-
-    .contact .icons-container {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: (minmax(30rem, 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        gap: 2rem;
-        margin-bottom: 4rem;
-    }
-
-    .contact .icons-container .icons {
-        text-align: center;
-        border-radius: 5px;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        padding: 2rem;
-    }
-
-    .contact .icons-container .icons:hover {
-        -webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.5) 0px 0.25em 1em;
-        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.5) 0px 0.25em 1em;
-    }
-
-    .contact .icons-container .icons i {
-        height: 6rem;
-        width: 6rem;
-        line-height: 6rem;
-        font-size: 2.5rem;
-        color: #fdfffc;
-        border-radius: 50%;
-    }
-
-    .contact .icons-container .icons .fa-phone {
-        background: #7496cb;
-    }
-
-    .contact .icons-container .icons .fa-envelope-open {
-        background: #efc050;
-    }
-
-    .contact .icons-container .icons .fa-map-marker-alt {
-        background: #d90429;
-    }
-
-    .contact .icons-container .icons h3 {
-        color: #000000;
-        font-size: 2rem;
-        padding: 1rem 0;
-    }
-
-    .contact .icons-container .icons p {
-        color: #4d4d4d;
-        font-size: 1.5rem;
-        line-height: 2;
-    }
-
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .row .form {
-        padding: 2rem;
-        border: 0.1rem solid rgba(0, 0, 0, 0.1);
-        -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-        flex: 1 1 40rem;
-        border-radius: 1%;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
-
-    .row .form h3 {
-        font-size: 2.5rem;
-        padding-bottom: 1rem;
-        color: #000000;
-    }
-
-    .row .form .inputBox {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-
-    .row .form .inputBox input {
-        border-radius: 10px;
-        width: 49%;
-    }
-
-    .row .form .inputBox .box,
-    .row .form textarea {
-        padding: 1rem 1.2rem;
-        font-size: 1.6rem;
-        border: 0.1rem solid rgba(0, 0, 0, 0.1);
-        color: #000000;
-        text-transform: none;
-        margin: .7rem 0;
-        border-radius: 10px;
-    }
-
-    .row .form textarea {
-        width: 100%;
-        height: 15rem;
-        resize: none;
-    }
-
-    .row .map {
-        -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-        flex: 1 1 40rem;
-        width: 100%;
-    }
-</style>
-
-<body>
-
-
+  <body>
     <!-- Header -->
     <header id="header" class="shadow bg-light px-120">
-        <nav class="container navbar">
-          <a href="index.html" class="nav-brand text-dark"> Blogs </a>
-  
-          <!-- toggle button -->
-          <button class="toggle-button">
-            <span><i class="fas fa-bars"></i></span>
-          </button>
-  
-          <!-- collapse on toggle button click -->
-          <div class="collapse">
-            <ul class="navbar-nav">
-              <a href="./index.html" class="nav-link">Home</a>
-              <a href="./new_about.html" class="nav-link">About</a>
-              <a href="./contact.html" class="nav-link">Contact</a>
-            </ul>
-          </div>
-  
-          <!-- collapse on toggle button click -->
-          <div class="collapse">
-            <ul class="navbar-nav">
-              <!-- <div class="search-box">
+      <nav class="container navbar">
+        <a href="index.html" class="nav-brand text-dark"> Blogs </a>
+
+        <!-- toggle button -->
+        <button class="toggle-button">
+          <span><i class="fas fa-bars"></i></span>
+        </button>
+
+        <!-- collapse on toggle button click -->
+        <div class="collapse">
+          <ul class="navbar-nav">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./new_about.html" class="nav-link">About</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </ul>
+        </div>
+
+        <!-- collapse on toggle button click -->
+        <div class="collapse">
+          <ul class="navbar-nav">
+            <!-- <div class="search-box">
                                   <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
                               </div> -->
-              <a href="" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-              <a href="" class="nav-link"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/_samriddhi_g_/" class="nav-link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/samriddhi-gupta-939a91221/"
-                class="nav-link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </ul>
-          </div>
-        </nav>
-      </header>
+            <a href="" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="nav-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_samriddhi_g_/" class="nav-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/samriddhi-gupta-939a91221/"
+              class="nav-link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <!-- .Header -->
 
-
-
-
     <div class="heading">
-        <h1>Share your ideas with us</h1>
-      
+      <h1>Share your ideas with us</h1>
     </div>
 
     <section class="contact mt-4">
-
-        <div class="icons-container">
-
-            <div class="icons">
-                <i class="fal fa-phone"></i>
-                <h3>our number</h3>
-                <p>+123-456-7890</p>
-                <p>+111-777-3333</p>
-            </div>
-
-            <div class="icons">
-                <i class="fal fa-envelope-open"></i>
-                <h3>our email</h3>
-                <p>sinu.secu@gmail.com</p>
-                <p>example@email.com</p>
-            </div>
-
-
-            <div class="icons">
-                <i class="fal fa-map-marker-alt"></i>
-                <h3>our address</h3>
-                <p>Jhansi Uttar Pradesh, India</p>
-            </div>
-
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fal fa-phone"></i>
+          <h3>our number</h3>
+          <p>+123-456-7890</p>
+          <p>+111-777-3333</p>
         </div>
 
-        
+        <div class="icons">
+          <i class="fal fa-envelope-open"></i>
+          <h3>our email</h3>
+          <p>sinu.secu@gmail.com</p>
+          <p>example@email.com</p>
+        </div>
+
+        <div class="icons">
+          <i class="fal fa-map-marker-alt"></i>
+          <h3>our address</h3>
+          <p>Jhansi Uttar Pradesh, India</p>
+        </div>
+      </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="contacts-copyrights">
-        <p class="text-center text-secondary display-2">
-          © 2022 <a href="#" class="text-primary">Blogs</a> - A Student Blog.
-          All rights reserved.
-        </p>
-      </div>
-
-
-
-    <script src="script.js"></script>
-</body>
-
+      <p class="text-center text-secondary display-2">
+        © 2022 <a href="#" class="text-primary">Blogs</a> - A Student Blog. All
+        rights reserved.
+      </p>
+    </div>
+  </body>
 </html>
