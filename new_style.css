@@ -26,7 +26,12 @@ body {
 }
 
 a {
+  color: var(--dark);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 * > * {
@@ -262,6 +267,31 @@ a {
   font-size: 32px;
 }
 
+.about {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  color: var(--dark);
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.about-heading {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  align-self: center;
+  font-size: 32px;
+  color: var(--dark);
+}
+
+.about-heading-quote {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  align-self: center;
+  font-size: 32px;
+  color: #919191;
+}
 .collapse {
   align-self: center;
 }
@@ -364,6 +394,9 @@ a {
   font-size: 1.35rem;
   font-weight: 500;
   line-height: 1.42em;
+}
+.post-title:hover {
+  color : var(--primary-color);
 }
 
 .post-image {
