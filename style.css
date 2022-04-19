@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap");
 
 /* root styling */
-
+html {
+  zoom: 90%;
+}
 :root {
   --light: #f8f9fa;
   --secondary: #adb5bd;
